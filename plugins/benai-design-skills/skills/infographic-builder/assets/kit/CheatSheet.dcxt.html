@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="@FONTLINK@">
+  <style>
+    body { margin: 0; }
+    a { color: @INK@; } a:hover { color: @INK@; }
+  </style>
+</helmet>
+
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; background: @GROUNDBG@; padding: 56px 58px 40px; display: flex; flex-direction: column; justify-content: space-between; gap: 22px; font-family: @BODYFONT@; color: @INK@;">
+
+  <div style="display: flex; flex-direction: column; gap: 14px; padding-bottom: 22px;">
+    <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px;">
+      <span style="font-size: 14px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: @MUTED@;">Cheat sheet</span>
+      <span style="font-family: @MONOFONT@; font-size: 15px; color: @MUTED@;">@SITE@</span>
+    </div>
+    <h1 style="margin: 0; font-family: @DISPLAYFONT@; font-weight: 700; font-size: 64px; line-height: 1.02; letter-spacing: -0.035em;">The AI operator stack <span style="color: @MUTED@;">2026</span></h1>
+    <p style="margin: 0; font-size: 21px; font-weight: 600; line-height: 1.45; max-width: 780px;">What to connect, what to automate, and what to keep doing yourself. Sample copy: replace every line with the user's material.</p>
+  </div>
+
+  <div style="height: 2px; background: @RULE2@;"></div>
+
+  <div style="display: flex; flex-direction: column; gap: 18px;">
+    <div style="display: flex; align-items: baseline; gap: 16px;">
+      <span style="@NUM@">1</span>
+      <h2 style="margin: 0; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 30px; letter-spacing: -0.02em;">Four rules before you build anything</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 26px;">
+      <div style="display: flex; flex-direction: column; gap: 9px;">
+        <h3 style="margin: 0; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 20px; line-height: 1.2;">Repeat, then automate</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.45; color: @MUTED@;">Fewer than three runs by hand means you do not know the job yet.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 9px; border-left: 1px solid @HAIR@; padding-left: 26px;">
+        <h3 style="margin: 0; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 20px; line-height: 1.2;">Connect before you prompt</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.45; color: @MUTED@;">A connector reads your real data. A blank chat box guesses.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 9px; border-left: 1px solid @HAIR@; padding-left: 26px;">
+        <h3 style="margin: 0; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 20px; line-height: 1.2;">One job per system</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.45; color: @MUTED@;">Two jobs in one automation means neither gets fixed when it breaks.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 9px; border-left: 1px solid @HAIR@; padding-left: 26px;">
+        <h3 style="margin: 0; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 20px; line-height: 1.2;">You still sign it</h3>
+        <p style="margin: 0; font-size: 15px; line-height: 1.45; color: @MUTED@;">The system drafts. You read it, cut it, and send it.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 1px; background: @RULE@;"></div>
+
+  <div style="display: grid; grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr); gap: 44px;">
+
+    <div style="display: flex; flex-direction: column; gap: 18px;">
+    <div style="display: flex; align-items: baseline; gap: 16px;">
+      <span style="@NUM@">2</span>
+      <h2 style="margin: 0; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 30px; letter-spacing: -0.02em;">The loop</h2>
+    </div>
+      <div style="display: flex; flex-direction: column; gap: 16px; border-left: 2px solid @ACCENT2@; padding-left: 20px;">
+        <div style="display: flex; align-items: baseline; gap: 12px;"><span style="font-family: @MONOFONT@; font-size: 14px; color: @MUTED@;">01</span><span style="font-family: @DISPLAYFONT@; font-weight: 500; font-size: 22px;">Capture</span></div>
+        <div style="display: flex; align-items: baseline; gap: 12px;"><span style="font-family: @MONOFONT@; font-size: 14px; color: @MUTED@;">02</span><span style="font-family: @DISPLAYFONT@; font-weight: 500; font-size: 22px;">Connect</span></div>
+        <div style="display: flex; align-items: baseline; gap: 12px;"><span style="font-family: @MONOFONT@; font-size: 14px; color: @MUTED@;">03</span><span style="font-family: @DISPLAYFONT@; font-weight: 500; font-size: 22px; background: @ACCENT@; color: @ONACCENT@; padding: 1px 9px;">Draft</span></div>
+        <div style="display: flex; align-items: baseline; gap: 12px;"><span style="font-family: @MONOFONT@; font-size: 14px; color: @MUTED@;">04</span><span style="font-family: @DISPLAYFONT@; font-weight: 500; font-size: 22px;">Check</span></div>
+        <div style="display: flex; align-items: baseline; gap: 12px;"><span style="font-family: @MONOFONT@; font-size: 14px; color: @MUTED@;">05</span><span style="font-family: @DISPLAYFONT@; font-weight: 500; font-size: 22px;">Send</span></div>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 18px;">
+    <div style="display: flex; align-items: baseline; gap: 16px;">
+      <span style="@NUM@">3</span>
+      <h2 style="margin: 0; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 30px; letter-spacing: -0.02em;">Hand these over first</h2>
+    </div>
+      <div style="display: flex; flex-direction: column;">
+        <div style="display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr) 96px; gap: 16px; padding-bottom: 11px; border-bottom: 1px solid @HAIR@; font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: @MUTED@;">
+          <span>The job</span><span>Where it lives</span><span style="text-align: right;">Time back</span>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr) 96px; gap: 16px; align-items: center; padding: 13px 0; border-bottom: 1px solid @HAIR@;">
+          <span style="font-size: 17px; font-weight: 600;">Monday numbers</span><span style="font-size: 15px; color: @MUTED@;">Sheets and Stripe</span><span style="justify-self: end; background: @ACCENT@; color: @ONACCENT@; border-radius: 4px; padding: 4px 11px; font-family: @MONOFONT@; font-size: 14px;">[0h]</span>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr) 96px; gap: 16px; align-items: center; padding: 13px 0; border-bottom: 1px solid @HAIR@;">
+          <span style="font-size: 17px; font-weight: 600;">Call notes and follow-ups</span><span style="font-size: 15px; color: @MUTED@;">Gmail and the CRM</span><span style="justify-self: end; background: @ACCENT@; color: @ONACCENT@; border-radius: 4px; padding: 4px 11px; font-family: @MONOFONT@; font-size: 14px;">[0h]</span>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr) 96px; gap: 16px; align-items: center; padding: 13px 0; border-bottom: 1px solid @HAIR@;">
+          <span style="font-size: 17px; font-weight: 600;">One video into six posts</span><span style="font-size: 15px; color: @MUTED@;">Docs and the vault</span><span style="justify-self: end; background: @ACCENT@; color: @ONACCENT@; border-radius: 4px; padding: 4px 11px; font-family: @MONOFONT@; font-size: 14px;">[0h]</span>
+        </div>
+        <div style="display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr) 96px; gap: 16px; align-items: center; padding: 13px 0;">
+          <span style="font-size: 17px; font-weight: 600;">The same question, again</span><span style="font-size: 15px; color: @MUTED@;">Slack and the docs</span><span style="justify-self: end; background: @ACCENT@; color: @ONACCENT@; border-radius: 4px; padding: 4px 11px; font-family: @MONOFONT@; font-size: 14px;">[0h]</span>
+        </div>
+      </div>
+      <p style="margin: 0; font-size: 13px; color: @MUTED@;">Bracketed hours are empty slots. Put your own measured numbers in before this goes out.</p>
+    </div>
+  </div>
+
+  <div style="height: 1px; background: @RULE@;"></div>
+
+  <div style="display: flex; flex-direction: column; gap: 20px;">
+    <div style="display: flex; align-items: baseline; gap: 16px;">
+      <span style="@NUM@">4</span>
+      <h2 style="margin: 0; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 30px; letter-spacing: -0.02em;">What we actually connect</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 16px; justify-items: center; color: @INK@;">
+      <!--MARKW:claude:40:Claude-->
+      <!--MARKW:gmail:40:Gmail-->
+      <!--MARKW:slack:40:Slack-->
+      <!--MARKW:notion:40:Notion-->
+      <!--MARKW:obsidian:40:Obsidian-->
+      <!--MARKW:googlesheets:40:Sheets-->
+      <!--MARKW:googledocs:40:Docs-->
+      <!--MARKW:whatsapp:40:WhatsApp-->
+    </div>
+  </div>
+
+  <div style="height: 1px; background: @RULE@;"></div>
+
+  <div style="display: flex; flex-direction: column; gap: 18px;">
+    <div style="display: flex; align-items: baseline; gap: 16px;">
+      <span style="@NUM@">5</span>
+      <h2 style="margin: 0; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 30px; letter-spacing: -0.02em;">Where operators go wrong</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 26px; font-size: 16px; line-height: 1.5;">
+      <div style="display: flex; flex-direction: column; gap: 11px;">
+        <div style="display: flex; align-items: flex-start; gap: 11px;"><span style="width: 7px; height: 7px; background: @ACCENT2@; flex: none; margin-top: 8px;"></span><span>Building a demo nobody pays for</span></div>
+        <div style="display: flex; align-items: flex-start; gap: 11px;"><span style="width: 7px; height: 7px; background: @ACCENT2@; flex: none; margin-top: 8px;"></span><span>Chasing the newest tool every week</span></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 11px; border-left: 1px solid @HAIR@; padding-left: 26px;">
+        <div style="display: flex; align-items: flex-start; gap: 11px;"><span style="width: 7px; height: 7px; background: @ACCENT2@; flex: none; margin-top: 8px;"></span><span>Automating a job they never mapped</span></div>
+        <div style="display: flex; align-items: flex-start; gap: 11px;"><span style="width: 7px; height: 7px; background: @ACCENT2@; flex: none; margin-top: 8px;"></span><span>Hiding a broken process behind a prompt</span></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 11px; border-left: 1px solid @HAIR@; padding-left: 26px;">
+        <div style="display: flex; align-items: flex-start; gap: 11px;"><span style="width: 7px; height: 7px; background: @ACCENT2@; flex: none; margin-top: 8px;"></span><span>Sending output they did not read</span></div>
+        <div style="display: flex; align-items: flex-start; gap: 11px;"><span style="width: 7px; height: 7px; background: @ACCENT2@; flex: none; margin-top: 8px;"></span><span>Waiting to feel qualified enough to start</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height: 1px; background: @RULE@;"></div>
+
+  <div style="display: flex; align-items: center; justify-content: space-between;">
+    <div style="display: flex; align-items: center; gap: 14px;">
+      <img src="@AVATAR@" alt="@AUTHOR@" style="width: 42px; height: 42px; border-radius: 50%; display: block;">
+      <span style="font-family: @DISPLAYFONT@; font-weight: 500; font-size: 20px;">@AUTHOR@</span>
+    </div>
+    <img src="@BRANDMARK@" alt="Brand mark" style="width: 36px; height: 36px; display: block;">
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

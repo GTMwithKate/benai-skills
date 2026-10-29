@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CTA slide</title>
+<link rel="stylesheet" href="tokens.css">
+<!-- If the brand uses webfonts, add the fonts <link> or @font-face here. -->
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1350px; }
+  .slide {
+    width: 1080px; height: 1350px;
+    background: var(--carousel-bg);
+    color: var(--carousel-ink);
+    font-family: var(--carousel-font-body);
+    display: flex; flex-direction: column; justify-content: center;
+    padding: var(--carousel-pad);
+    padding-bottom: calc(var(--carousel-footer-h) + 48px);
+    position: relative; overflow: hidden;
+  }
+  .eyebrow {
+    font-size: 26px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--carousel-muted);
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-family: var(--carousel-font-display);
+    font-size: 84px; line-height: 1.08; font-weight: 800;
+    letter-spacing: -0.01em;
+    max-width: 13ch;
+  }
+  h1 mark {
+    background: var(--carousel-highlight);
+    color: inherit;
+    border-radius: var(--carousel-radius);
+    padding: 0 0.14em;
+    box-decoration-break: clone; -webkit-box-decoration-break: clone;
+  }
+  .cta {
+    margin-top: 56px;
+    display: inline-flex; align-self: flex-start;
+    align-items: center; gap: 18px;
+    background: var(--carousel-accent);
+    color: var(--carousel-bg);
+    font-size: 34px; font-weight: 700;
+    padding: 26px 44px;
+    border-radius: calc(var(--carousel-radius) * 1.5);
+  }
+  /* No swipe cue on the final slide. */
+  .footer {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    height: var(--carousel-footer-h);
+    background: var(--carousel-bar);
+    color: var(--carousel-bg);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 var(--carousel-pad);
+    font-size: 26px; font-weight: 600;
+  }
+  .footer .identity { display: flex; align-items: center; gap: 20px; }
+  .footer img.logo { height: 52px; width: auto; display: block; }
+  .footer .page { font-variant-numeric: tabular-nums; letter-spacing: 0.12em; opacity: 0.85; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow"><!-- EYEBROW: 2-5 words --></div>
+    <h1><!-- CLOSING HEADLINE with exactly one <mark>highlighted phrase</mark> --></h1>
+    <div class="cta"><!-- CTA: one imperative line --> <span>&#8594;</span></div>
+    <div class="footer">
+      <div class="identity">
+        <!-- Optional: <img class="logo" src="RELATIVE/PATH/mark.svg" alt=""> -->
+        <span><!-- BRAND OR AUTHOR NAME --></span>
+      </div>
+      <div class="page"><!-- NN / NN --></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "benai-design-skills",
+  "description": "Eight skills, one framework: build a design system once, then every asset obeys it. Extract brand tokens from any site, review them on a visual teardown, and generate infographics, carousels, visuals, dashboards, and emails that adapt to your brand — each planned on a /design canvas with 2-3 variations before anything is built.",
+  "version": "2.0.0",
+  "author": {
+    "name": "Ben AI",
+    "url": "https://benai.co"
+  },
+  "homepage": "https://benai.co",
+  "keywords": [
+    "design",
+    "design-system",
+    "brand",
+    "tokens",
+    "infographics",
+    "carousels",
+    "dashboards",
+    "email-design",
+    "templates",
+    "design-canvas"
+  ]
+}

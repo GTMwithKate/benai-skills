@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="@FONTLINK@">
+  <style>
+    body { margin: 0; }
+    a { color: @INK@; } a:hover { color: @INK@; }
+  </style>
+</helmet>
+
+<div style="width: 1080px; height: 1080px; box-sizing: border-box; background: @PANEL@; padding: 72px; display: flex; flex-direction: column; justify-content: space-between; gap: 40px; font-family: @BODYFONT@; color: @INK@;">
+
+  <div style="display: flex; align-items: center; gap: 22px;">
+    <img src="@AVATAR@" alt="@AUTHOR@" style="width: 76px; height: 76px; border-radius: 50%; display: block; flex: none;">
+    <div style="display: flex; flex-direction: column; gap: 4px;">
+      <span style="font-family: @DISPLAYFONT@; font-weight: 500; font-size: 30px; letter-spacing: -0.01em;">@AUTHOR@</span>
+      <span style="font-size: 20px; font-weight: 400; color: @MUTED@;">@HANDLE@</span>
+    </div>
+  </div>
+
+  <p style="margin: 0; font-family: @DISPLAYFONT@; font-weight: 700; font-size: 60px; line-height: 1.12; letter-spacing: -0.03em; text-wrap: pretty;">I did not hire anyone. I moved three jobs off my desk.</p>
+
+  <div style="flex: none; background: @CARD@; border: 2px solid @LINE@; border-radius: 8px; box-shadow: 8px 8px 0 @SHADOW@; padding: 40px 44px; display: flex; flex-direction: column; gap: 0;">
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; padding-bottom: 20px; border-bottom: 2px solid @LINE@;">
+      <span style="font-size: 16px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: @MUTED@;">Was mine</span>
+      <span style="font-size: 16px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: @MUTED@;">Runs itself</span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; padding: 26px 0; border-bottom: 1px solid @HAIR@; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 27px; line-height: 1.25;">
+      <span>Monday numbers, by hand</span>
+      <span>A skill, at 06:00</span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; padding: 26px 0; border-bottom: 1px solid @HAIR@; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 27px; line-height: 1.25;">
+      <span>Notes across four apps</span>
+      <span>One vault, one search</span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; padding: 26px 0; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 27px; line-height: 1.25;">
+      <span>Call notes, if I remembered</span>
+      <span>Written before I stand up</span>
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: flex-end;">
+    <img src="@BRANDMARK@" alt="Brand mark" style="width: 46px; height: 46px; display: block;">
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

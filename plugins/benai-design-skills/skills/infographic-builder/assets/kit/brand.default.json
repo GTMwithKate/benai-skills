@@ -1,0 +1,49 @@
+{
+  "_readme": "Grayscale PLACEHOLDER brand. It exists so the pipeline can be smoke-tested before any brand work happens. Never hand a user an artboard built from it: generate their real brand.json from their design-system/ folder first. Schema and mapping guide: references/brand-adaptation.md.",
+  "site": "example.com",
+  "author": {
+    "name": "Your Name",
+    "handle": "@yourhandle",
+    "avatar": ""
+  },
+  "brandmark": {
+    "light": "",
+    "dark": ""
+  },
+  "fonts": {
+    "link": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono&display=swap",
+    "display": "Inter, 'Helvetica Neue', Arial, sans-serif",
+    "body": "Inter, 'Helvetica Neue', Arial, sans-serif",
+    "mono": "'IBM Plex Mono', 'SF Mono', Consolas, monospace"
+  },
+  "light": {
+    "ground": "#F2F2F0",
+    "ink": "#1C1C1F",
+    "muted": "#57575E",
+    "hair": "#D6D6D0",
+    "card": "#F2F2F0",
+    "panel": "#E8E8E4",
+    "panel2": "#E1E1DB",
+    "accent": "#DDDDD6",
+    "accent2": "#6B6B63",
+    "onaccent": "#1C1C1F",
+    "success": "#E2EDE4",
+    "danger": "#F0E0E0",
+    "shadow": "#1C1C1F"
+  },
+  "dark": {
+    "ground": "#141416",
+    "ink": "#EFEFEA",
+    "muted": "#97979E",
+    "hair": "#2F2F33",
+    "card": "#1B1B1E",
+    "panel": "#1E1E22",
+    "panel2": "#232328",
+    "accent": "#DDDDD6",
+    "accent2": "#B9B9AE",
+    "onaccent": "#1C1C1F",
+    "success": "#E2EDE4",
+    "danger": "#F0E0E0",
+    "shadow": "#4B4B50"
+  }
+}

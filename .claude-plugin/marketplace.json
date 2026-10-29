@@ -77,6 +77,41 @@
       ]
     },
     {
+      "name": "benai-design-skills",
+      "displayName": "Ben AI Design Skills",
+      "source": "./plugins/benai-design-skills",
+      "description": "Eight skills, one framework: build a design system once, then every asset obeys it. Extract brand tokens from any site, review them on a visual teardown, and generate infographics, carousels, visuals, dashboards, and emails that adapt to your brand.",
+      "version": "2.0.0",
+      "author": {
+        "name": "Ben AI"
+      },
+      "keywords": [
+        "design",
+        "design-system",
+        "brand",
+        "infographics",
+        "carousels",
+        "email-design"
+      ]
+    },
+    {
+      "name": "analytics-dashboard-builder",
+      "displayName": "Analytics Dashboard Builder",
+      "source": "./plugins/analytics-dashboard-builder",
+      "description": "Build a business analytics dashboard from the tools you already pay for, then keep it updating itself every morning.",
+      "version": "1.2.0",
+      "author": {
+        "name": "Ben AI"
+      },
+      "keywords": [
+        "dashboard",
+        "analytics",
+        "kpi",
+        "metrics",
+        "reporting"
+      ]
+    },
+    {
       "name": "all-skills",
       "displayName": "All Skills",
       "source": "./plugins/all-skills",

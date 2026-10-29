@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="@FONTLINK@">
+  <style>
+    body { margin: 0; }
+    a { color: @INK@; } a:hover { color: @INK@; }
+  </style>
+</helmet>
+
+<div style="width: 1080px; height: 1350px; box-sizing: border-box; background: @GROUNDBG@; padding: 50px 56px 32px; display: flex; flex-direction: column; justify-content: space-between; gap: 26px; font-family: @BODYFONT@; color: @INK@;">
+
+  <div style="display: flex; flex-direction: column; gap: 14px; padding-bottom: 22px;">
+    <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 24px;">
+      <span style="font-size: 14px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: @MUTED@;">Decision tree</span>
+      <span style="font-family: @MONOFONT@; font-size: 15px; color: @MUTED@;">@SITE@</span>
+    </div>
+    <h1 style="margin: 0; font-family: @DISPLAYFONT@; font-weight: 700; font-size: 64px; line-height: 1.02; letter-spacing: -0.035em;">Where should this task live?</h1>
+    <p style="margin: 0; font-size: 21px; font-weight: 600; line-height: 1.45; max-width: 800px;">Four questions. Follow them down until the task finds a home. Then stop building.</p>
+  </div>
+
+  <div style="height: 2px; background: @RULE2@;"></div>
+
+  <div style="display: grid; grid-template-columns: minmax(0, 1fr) 88px 410px; column-gap: 0; row-gap: 0; align-items: stretch;">
+
+      <div style="grid-column: 1 / 2; display: flex; justify-content: center;">
+        <div style="background: @CARD@; border: @BOX@; border-radius: 8px; box-shadow: 6px 6px 0 @SHADOW@; padding: 15px 30px; font-family: @DISPLAYFONT@; font-weight: 700; font-size: 26px;">A task keeps landing on you</div>
+      </div>
+      <div></div>
+      <div></div>
+
+      <div style="position: relative; height: 46px;">
+        <div style="position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: @LINE@; transform: translateX(-1px);"></div>
+        <div style="position: absolute; left: 50%; bottom: 0; transform: translateX(-8px); width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 11px solid @LINE@;"></div>
+      </div>
+      <div></div>
+      <div></div>
+
+      <div style="background: @CARD@; border: @BOX@; border-radius: 8px; padding: 20px 24px; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 25px; line-height: 1.25; align-self: center;">Have you done it three times by hand?</div>
+      <div style="position: relative;">
+        <div style="position: absolute; top: 50%; left: 0; right: 0; height: 2px; background: @LINE@; transform: translateY(-1px);"></div>
+        <div style="position: absolute; top: 50%; right: 0; transform: translateY(-8px); width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-left: 11px solid @LINE@;"></div>
+        <span style="position: absolute; top: calc(50% - 32px); left: 50%; transform: translateX(-50%); font-size: 14px; font-weight: 600; letter-spacing: 0.12em; color: @MUTED@;">NO</span>
+      </div>
+      <div style="border: @BOX@; border-radius: 8px; background: @CARD@; padding: 18px 20px; display: flex; flex-direction: column; gap: 12px; align-self: center;">
+        <div style="display: flex; align-items: center; gap: 11px;">
+          <span style="display: flex; align-items: center; justify-content: center; width: 30px; height: 30px; flex: none; background: @ACCENT@; color: @ONACCENT@; border: @BOX@; border-radius: 50%; font-family: @DISPLAYFONT@; font-weight: 700; font-size: 16px;">1</span>
+          <h3 style="margin: 0; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 22px; line-height: 1.15;">Just do it</h3>
+        </div>
+        <p style="margin: 0; font-size: 14px; line-height: 1.45; color: @MUTED@;">Three runs by hand is the cheapest spec you will ever write.</p>
+        <div style="display: flex; align-items: center; gap: 18px;"><!--MARK:gmail:34--><!--MARK:googledocs:34--><!--MARK:slack:34--><!--MARK:googlecalendar:34--></div>
+      </div>
+
+      <div style="position: relative; height: 50px;">
+        <div style="position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: @LINE@; transform: translateX(-1px);"></div>
+        <div style="position: absolute; left: 50%; bottom: 0; transform: translateX(-8px); width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 11px solid @LINE@;"></div>
+        <span style="position: absolute; left: calc(50% + 16px); top: 15px; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; color: @MUTED@;">YES</span>
+      </div>
+      <div></div>
+      <div></div>
+
+      <div style="background: @CARD@; border: @BOX@; border-radius: 8px; padding: 20px 24px; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 25px; line-height: 1.25; align-self: center;">Does it need your judgement to be right?</div>
+      <div style="position: relative;">
+        <div style="position: absolute; top: 50%; left: 0; right: 0; height: 2px; background: @LINE@; transform: translateY(-1px);"></div>
+        <div style="position: absolute; top: 50%; right: 0; transform: translateY(-8px); width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-left: 11px solid @LINE@;"></div>
+        <span style="position: absolute; top: calc(50% - 32px); left: 50%; transform: translateX(-50%); font-size: 14px; font-weight: 600; letter-spacing: 0.12em; color: @MUTED@;">NO</span>
+      </div>
+      <div style="border: @BOX@; border-radius: 8px; background: @CARD@; padding: 18px 20px; display: flex; flex-direction: column; gap: 12px; align-self: center;">
+        <div style="display: flex; align-items: center; gap: 11px;">
+          <span style="display: flex; align-items: center; justify-content: center; width: 30px; height: 30px; flex: none; background: @ACCENT@; color: @ONACCENT@; border: @BOX@; border-radius: 50%; font-family: @DISPLAYFONT@; font-weight: 700; font-size: 16px;">2</span>
+          <h3 style="margin: 0; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 22px; line-height: 1.15;">Connect apps</h3>
+        </div>
+        <p style="margin: 0; font-size: 14px; line-height: 1.45; color: @MUTED@;">The rule never changes, so let the tools pass the data between them.</p>
+        <div style="display: flex; align-items: center; gap: 18px;"><!--MARK:googlesheets:34--><!--MARK:stripe:34--><!--MARK:hubspot:34--><!--MARK:zapier:34--></div>
+      </div>
+
+      <div style="position: relative; height: 50px;">
+        <div style="position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: @LINE@; transform: translateX(-1px);"></div>
+        <div style="position: absolute; left: 50%; bottom: 0; transform: translateX(-8px); width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 11px solid @LINE@;"></div>
+        <span style="position: absolute; left: calc(50% + 16px); top: 15px; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; color: @MUTED@;">YES</span>
+      </div>
+      <div></div>
+      <div></div>
+
+      <div style="background: @CARD@; border: @BOX@; border-radius: 8px; padding: 20px 24px; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 25px; line-height: 1.25; align-self: center;">Does it have to run while you sleep?</div>
+      <div style="position: relative;">
+        <div style="position: absolute; top: 50%; left: 0; right: 0; height: 2px; background: @LINE@; transform: translateY(-1px);"></div>
+        <div style="position: absolute; top: 50%; right: 0; transform: translateY(-8px); width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-left: 11px solid @LINE@;"></div>
+        <span style="position: absolute; top: calc(50% - 32px); left: 50%; transform: translateX(-50%); font-size: 14px; font-weight: 600; letter-spacing: 0.12em; color: @MUTED@;">NO</span>
+      </div>
+      <div style="border: @BOX@; border-radius: 8px; background: @CARD@; padding: 18px 20px; display: flex; flex-direction: column; gap: 12px; align-self: center;">
+        <div style="display: flex; align-items: center; gap: 11px;">
+          <span style="display: flex; align-items: center; justify-content: center; width: 30px; height: 30px; flex: none; background: @ACCENT@; color: @ONACCENT@; border: @BOX@; border-radius: 50%; font-family: @DISPLAYFONT@; font-weight: 700; font-size: 16px;">3</span>
+          <h3 style="margin: 0; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 22px; line-height: 1.15;">Write a skill</h3>
+        </div>
+        <p style="margin: 0; font-size: 14px; line-height: 1.45; color: @MUTED@;">Your judgement, written down once, reused every time you ask.</p>
+        <div style="display: flex; align-items: center; gap: 18px;"><!--MARK:claude:34--><!--MARK:obsidian:34--><!--MARK:notion:34--><!--MARK:figma:34--></div>
+      </div>
+
+      <div style="position: relative; height: 50px;">
+        <div style="position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; background: @LINE@; transform: translateX(-1px);"></div>
+        <div style="position: absolute; left: 50%; bottom: 0; transform: translateX(-8px); width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 11px solid @LINE@;"></div>
+        <span style="position: absolute; left: calc(50% + 16px); top: 15px; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; color: @MUTED@;">YES</span>
+      </div>
+      <div></div>
+      <div></div>
+
+      <div style="background: @ACCENT@; color: @ONACCENT@; border: @BOX@; border-radius: 8px; padding: 20px 24px; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 25px; line-height: 1.25; align-self: center;">It runs on a schedule and checks its own work.</div>
+      <div style="position: relative;">
+        <div style="position: absolute; top: 50%; left: 0; right: 0; height: 2px; background: @LINE@; transform: translateY(-1px);"></div>
+        <div style="position: absolute; top: 50%; right: 0; transform: translateY(-8px); width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-left: 11px solid @LINE@;"></div>
+      </div>
+      <div style="border: @BOX@; border-radius: 8px; background: @CARD@; padding: 18px 20px; display: flex; flex-direction: column; gap: 12px; align-self: center;">
+        <div style="display: flex; align-items: center; gap: 11px;">
+          <span style="display: flex; align-items: center; justify-content: center; width: 30px; height: 30px; flex: none; background: @ACCENT@; color: @ONACCENT@; border: @BOX@; border-radius: 50%; font-family: @DISPLAYFONT@; font-weight: 700; font-size: 16px;">4</span>
+          <h3 style="margin: 0; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 22px; line-height: 1.15;">Build an agent</h3>
+        </div>
+        <p style="margin: 0; font-size: 14px; line-height: 1.45; color: @MUTED@;">It wakes up, does the job, and pings you when it is done.</p>
+        <div style="display: flex; align-items: center; gap: 18px;"><!--MARK:claude:34--><!--MARK:n8n:34--><!--MARK:make:34--><!--MARK:whatsapp:34--></div>
+      </div>
+
+  </div>
+
+  <div style="height: 1px; background: @RULE@;"></div>
+
+  <div style="display: flex; align-items: center; justify-content: space-between;">
+    <div style="display: flex; align-items: center; gap: 14px;">
+      <img src="@AVATAR@" alt="@AUTHOR@" style="width: 42px; height: 42px; border-radius: 50%; display: block;">
+      <span style="font-family: @DISPLAYFONT@; font-weight: 500; font-size: 20px;">@AUTHOR@</span>
+    </div>
+    <img src="@BRANDMARK@" alt="Brand mark" style="width: 36px; height: 36px; display: block;">
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

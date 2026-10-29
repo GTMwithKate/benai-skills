@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hook slide</title>
+<link rel="stylesheet" href="tokens.css">
+<!-- If the brand uses webfonts, add the fonts <link> or @font-face here. -->
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1350px; }
+  .slide {
+    width: 1080px; height: 1350px;
+    background: var(--carousel-bg);
+    color: var(--carousel-ink);
+    font-family: var(--carousel-font-body);
+    display: flex; flex-direction: column;
+    padding: var(--carousel-pad);
+    padding-bottom: calc(var(--carousel-footer-h) + 48px);
+    position: relative; overflow: hidden;
+  }
+  .eyebrow {
+    font-size: 26px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--carousel-muted);
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-family: var(--carousel-font-display);
+    font-size: 92px; line-height: 1.05; font-weight: 800;
+    letter-spacing: -0.01em;
+    max-width: 12ch;
+  }
+  h1 mark {
+    background: var(--carousel-highlight);
+    color: inherit;
+    border-radius: var(--carousel-radius);
+    padding: 0 0.14em;
+    box-decoration-break: clone; -webkit-box-decoration-break: clone;
+  }
+  .body {
+    margin-top: 44px;
+    font-size: 34px; line-height: 1.4;
+    color: var(--carousel-muted);
+    max-width: 24ch;
+  }
+  .swipe {
+    position: absolute; right: var(--carousel-pad);
+    bottom: calc(var(--carousel-footer-h) + 40px);
+    font-size: 30px; font-weight: 700;
+    color: var(--carousel-accent);
+    letter-spacing: 0.08em;
+  }
+  .footer {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    height: var(--carousel-footer-h);
+    background: var(--carousel-bar);
+    color: var(--carousel-bg);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 var(--carousel-pad);
+    font-size: 26px; font-weight: 600;
+  }
+  .footer .identity { display: flex; align-items: center; gap: 20px; }
+  .footer img.logo { height: 52px; width: auto; display: block; }
+  .footer .page { font-variant-numeric: tabular-nums; letter-spacing: 0.12em; opacity: 0.85; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="eyebrow"><!-- EYEBROW: 2-5 words --></div>
+    <h1><!-- HEADLINE with exactly one <mark>highlighted phrase</mark> --></h1>
+    <p class="body"><!-- BODY: 1-2 fragment lines, ~10 words --></p>
+    <div class="swipe">&#8594;</div>
+    <div class="footer">
+      <div class="identity">
+        <!-- If design-system/logo/ has a mark, reference it:
+             <img class="logo" src="RELATIVE/PATH/mark.svg" alt=""> -->
+        <span><!-- BRAND OR AUTHOR NAME from the design system --></span>
+      </div>
+      <div class="page"><!-- 01 / NN --></div>
+    </div>
+  </div>
+</body>
+</html>

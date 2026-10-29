@@ -1,0 +1,15 @@
+/* Ben AI motion engine base. Brand colours and fonts come from brand.css (see references/brand.md). */
+@font-face { font-family: 'Geist'; src: url('fonts/Geist-Variable.woff2') format('woff2'); font-weight: 100 900; }
+@font-face { font-family: 'Geist Mono'; src: url('fonts/GeistMono-Medium.woff2') format('woff2'); font-weight: 500; }
+:root { --bg: #FAF7F0; --ink: #0B0B0B; --muted: #5E5A52; --accent: #FF5A1F; --card: #FFFFFF; --line: rgba(11,11,11,.14);
+        --font: 'Geist', system-ui, sans-serif; --mono: 'Geist Mono', ui-monospace, monospace; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #000; overflow: hidden; }
+body.preview { display: grid; place-items: center; height: 100vh; }
+#stage { position: relative; overflow: hidden; transform-origin: center; font-family: var(--font); color: var(--ink);
+         -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+body:not(.preview) #stage { transform: none !important; }
+.scene { position: absolute; inset: 0; }
+.abs { position: absolute; }
+.center { position: absolute; inset: 0; display: grid; place-items: center; }
+/* Motion is set from JS every frame. Never add CSS transitions or animations. */

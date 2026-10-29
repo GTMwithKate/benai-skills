@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Film</title>
+<link rel="stylesheet" href="../engine/base.css">
+<link rel="stylesheet" href="../brand.css">
+<style>
+  /* Scene styles go here. Sizes are for a 1920 x 1080 stage. */
+  .headline { font-size: 120px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.02; }
+  .hl { --hl: var(--accent); padding: 0 .08em; }
+</style></head>
+<body>
+<div id="stage">
+  <section class="scene" id="s1"><div class="center"><h1 class="headline" id="s1-title">One idea <span class="hl" id="s1-hl">per scene</span></h1></div></section>
+  <section class="scene" id="s2"><div class="center"><h1 class="headline" id="s2-title">Then the next one</h1></div></section>
+</div>
+<script src="../engine/motion.js"></script>
+<script>
+const { $, $$, show, stagger, words, highlight, p, ease, set } = BAI;
+BAI.film({
+  width: 1920, height: 1080, fps: 30, background: getComputedStyle(document.documentElement).getPropertyValue('--bg').trim(),
+  scenes: [
+    { id: 's1', title: 'Opening', start: 0, end: 2.6, draw(t) {
+        stagger(words($('#s1-title')), t, 0.2, 0.08, 2.3, { to: { x: -120, y: 0 } });
+        highlight($('#s1-hl'), t, 0.9);
+    } },
+    { id: 's2', title: 'Next', start: 2.6, end: 5, draw(t) {
+        stagger(words($('#s2-title')), t, 0, 0.08, Infinity, { from: { x: 120, y: 0 } });
+    } },
+  ],
+});
+</script>
+</body></html>

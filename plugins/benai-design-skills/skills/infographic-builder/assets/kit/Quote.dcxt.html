@@ -1,0 +1,37 @@
+<!--OUT:Light=QuoteLight,Dark=QuoteDark-->
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="@FONTLINK@">
+  <style>
+    body { margin: 0; }
+    a { color: @INK@; } a:hover { color: @INK@; }
+  </style>
+</helmet>
+
+<div style="width: 1080px; height: 1080px; box-sizing: border-box; background: @GROUNDBG@; padding: 96px 88px; display: flex; flex-direction: column; gap: 76px; font-family: @BODYFONT@; color: @INK@;">
+
+  <div style="display: flex; align-items: center; gap: 24px;">
+    <img src="@AVATAR@" alt="@AUTHOR@" style="width: 92px; height: 92px; border-radius: 50%; display: block; flex: none;">
+    <div style="display: flex; flex-direction: column; gap: 5px;">
+      <span style="font-family: @DISPLAYFONT@; font-weight: 500; font-size: 35px; letter-spacing: -0.01em;">@AUTHOR@</span>
+      <span style="font-size: 23px; font-weight: 400; color: @MUTED@;">@HANDLE@</span>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 48px; font-family: @DISPLAYFONT@; font-weight: 500; font-size: 64px; line-height: 1.16; letter-spacing: -0.025em; text-wrap: pretty;">
+    <p style="margin: 0;">Most people automate the task they hate.</p>
+    <p style="margin: 0;">That is why nothing sticks.</p>
+    <p style="margin: 0;">Automate the task you repeat, not the one you resent.</p>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>

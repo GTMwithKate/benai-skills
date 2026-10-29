@@ -1,0 +1,32 @@
+/* ==========================================================================
+   Carousel token sheet.
+   Copy this file into the working folder and fill EVERY value from the
+   user's design-system/ (tokens/tokens.css, foundations/color.md,
+   foundations/typography.md). Never invent a value: no design system and
+   no user answer means you ask.
+
+   If the brand uses webfonts, add the @font-face rules or the fonts
+   <link> in each slide's <head> so the export renders the real type.
+   ========================================================================== */
+
+:root {
+  /* Color — fill from the brand's tokens */
+  --carousel-bg:        /* brand primary light surface, e.g. var or hex from tokens.css */ ;
+  --carousel-ink:       /* brand darkest text color */ ;
+  --carousel-muted:     /* secondary body-text color; if none defined, derive:
+                           color-mix(in srgb, var(--carousel-ink) 72%, var(--carousel-bg)) */ ;
+  --carousel-accent:    /* the single brand accent color */ ;
+  --carousel-highlight: /* soft tint of the accent for the headline marker; if the
+                           system has no tint, derive:
+                           color-mix(in srgb, var(--carousel-accent) 22%, var(--carousel-bg)) */ ;
+  --carousel-bar:       /* footer bar: a near-ink dark, or var(--carousel-ink) */ ;
+
+  /* Type — fill from the brand's font stacks, keep generic fallbacks */
+  --carousel-font-display: /* brand display/heading stack */ sans-serif;
+  --carousel-font-body:    /* brand body stack */ sans-serif;
+
+  /* Geometry — adjust only if the design system says otherwise */
+  --carousel-radius: 12px;      /* highlight + card corners */
+  --carousel-pad: 84px;         /* outer slide padding */
+  --carousel-footer-h: 130px;   /* footer bar height (~9.6% of 1350) */
+}
