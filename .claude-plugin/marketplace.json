@@ -55,6 +55,28 @@
       ]
     },
     {
+      "name": "sales-os",
+      "displayName": "Sales OS",
+      "source": "./plugins/sales-os",
+      "description": "Stand up a complete Sales OS — a markdown second brain for your sales world plus the routines, skills, and dashboard that keep it current: onboarder, lead-gen, outreach, one-pager, post-discovery follow-up, and OS optimizer/operator/MCP.",
+      "version": "1.0.1",
+      "author": {
+        "name": "BenAI"
+      },
+      "keywords": [
+        "sales-os",
+        "sales",
+        "second-brain",
+        "onboarder",
+        "lead-generation",
+        "outreach",
+        "onepager",
+        "proposal",
+        "discovery",
+        "dashboard"
+      ]
+    },
+    {
       "name": "all-skills",
       "displayName": "All Skills",
       "source": "./plugins/all-skills",
